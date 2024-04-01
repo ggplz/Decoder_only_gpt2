@@ -231,7 +231,7 @@ for step in range(max_iters):
         print('Step:', step, 'Training Loss:', round(losses['train'].item(), 3), 'Validation Loss:',
               round(losses['valid'].item(), 3))
 
-    xb, yb = get_batch('Train')
+    xb, yb = get_batch('train')
     logits, loss = model(xb, yb)
     optimizer.zero_grad(set_to_none=True)
     loss.backward()
