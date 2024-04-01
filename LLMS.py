@@ -6,7 +6,7 @@ import tiktoken
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
-
+###
 batch_size = 4
 context_length = 16  # 16 个 token
 d_model = 64
